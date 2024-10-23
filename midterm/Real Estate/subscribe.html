@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Subscription Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="bg-main">
+        <header class="main-header">
+            <div class="container clearfix">
+                <h1 class="name"><a href="homestyle.html">LA Real Estate</a></h1>
+                <ul class="main-nav">
+                    <li><a href="homestyle.html">Home Styles</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="subscribe.html">subscribe</a></li>
+                </ul>
+            </div>
+        </header><!--/.main-header-->  
+        
+        <div class="container center stickfooter clearfix">
+            <img class="logo" src="img/subscribe_icon.png" alt="City">
+            <h1 class="signup">Subscribe to Receive Customized Listings! </h1>
+            <p class="col">
+                Submit the survey below to receive future house listings in your desired neighborhoods based on your preferred house styles. 
+            </p>
+            <form action="index.html" method="POST">
+                <fieldset>
+                    <legend><span class="number">1</span>Your Basic Info</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name">
+
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="phone" id="phone" name="user_phone">
+
+                    <label>Age</label>
+                    <input type="radio" id="under_21" value="under_21" name="user_age"><label for="under_21" class="light">Under 21</label><br>
+                    <input type="radio" id="over_21" value="over_21" name="user_age"><label for="over_21" class="light">21 or Older</label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend><span class="number">2</span>Your Profile</legend>
+
+                    <label for="area">Which areas are you looking to buy your house in:</label>
+                    <textarea id="area" name="user_area" placeholder="Los Angeles, Irvine, Torrance..."></textarea>
+
+                    <label for="preference">Things you are looking for in your new home:</label>
+                    <textarea id="preference" name="user_preference" placeholder="The location, the site, the neighborhood, the school ratings, the house size, how many bedrooms and bathrooms, the kitchen requirements, the closets and storage, the windows and lighting, pool and the unique features..."></textarea>
+                </fieldset>
+
+                <label for="homestyle">Home style you are looking for:</label>
+                <select id="homestyle" name="user_homestyle">
+                    <optgroup label="Single-family Home"></optgroup>
+                        <option value="colonial_style">Colonial</option>
+                        <option value="cape_cod">Cape Cod</option>
+                        <option value="contemporary">Contemporary</option>
+                        <option value="craftsman">Craftsman</option>
+                        <option value="Mediterranean">Mediterranean</option>
+                        <option value="Ranch">Ranch</option>
+                        <option value="Tudor">Tudor</option>
+                        <option value="Victorian">Victorian</option>
+                    </optgroup>
+                </select>
+
+                <label>Interested in other types of residential building?</label>
+                    <input type="checkbox" id="condominium" value="interest_condominium"
+                    name="user_interest"><label for="condominium" class="light">Condominium</label><br>
+                    <input type="checkbox" id="townhouse" value="interest_townhouse" name="user_interest"><label for="townhouse" class="light">Townhouse</label><br>
+                    <input type="checkbox" id="cooperatives" value="interest_cooperatives" name="user_interest"><label for="cooperatives" class="light">Co-op</label><br>
+                    <input type="checkbox" id="multifamily" value="interest_multifamily" name="user_interest"><label for="multifamily" class="light">Multi-Family Home</label><br>
+                    <input type="checkbox" id="land" value="interest_land" name="user_interest"><label for="land" class="light">Land</label>
+
+                
+
+                <button type="submit"><a href="#">Subscribe</a></button>
+
+            </form>
+        </div>
+        <footer class="main-footer">
+            <span>&copy; 2020 <a href="../index.html">IWD Portfolio</a> | All Rights Reserved</span>
+        </footer>
+    </body>
+</html>
